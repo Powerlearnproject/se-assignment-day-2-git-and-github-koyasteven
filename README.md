@@ -7,7 +7,7 @@ VCS helps in maintaining project integrity in the sense that one can control the
 
 ## Describe the process of setting up a new repository on GitHub. What are the key steps involved, and what are some of the important decisions you need to make during this process?
 To set up a Repository on GitHub one must of necessarily havea GitHub account. Once that is in place, we can go ahead and create a Repo with the following steps:
-- Look for the create a new repository button("+")  and click
+- Look for the create a new repository button ("+") located on the right of the page, and click it.
 - Choose a unique name for the repository
 - Depending on your goals select if you want your Repo to be private or public
 - Add a  README file 
@@ -16,7 +16,6 @@ To set up a Repository on GitHub one must of necessarily havea GitHub account. O
 - Link your local Repo with GitHub using the "git remote add origin {GitHub address}"
 - Push the changes you have made to Github with "git push -u origin master"
   
-
 ## Discuss the importance of the README file in a GitHub repository. What should be included in a well-written README, and how does it contribute to effective collaboration?
 A README file is vital to a GitHub Repo as it is the first thing those that would be taking part in the project would see or look out for. It carries important information about the project and serves as a form of Manufacture's Manual.
 A well written README file should contain the following:
@@ -32,8 +31,28 @@ A well written README file should contain the following:
 The informantion provided in any README file, especially the Guidelines on how to contribut will allow for effective collaborations, as would be contributors would be clear on the scope and expectations their work.
 
 ## Compare and contrast the differences between a public repository and a private repository on GitHub. What are the advantages and disadvantages of each, particularly in the context of collaborative projects?
+Both public and private repositories are used as control tools for your project: They can be used to track changes made, go back to previous versions and allow for collaboration with others. The owner of the repo is able to set rules and permissions for would be collaborators. 
+On the other hand however, there are some difference between the two: First of all, a public repo is accessible to everyone on the internet, they are able to view, clone and do whatever else is available on your project. A private repo only allows people you share access with - you can limit the number of participants, even within an organization.
+Secondly, Public repos are ideal for open source projects - especially when you want the larger society to share and make contributions to the project. Private repositories are suitable personal projects, products that you intend to use commercially and hence need to protect from unwanted access.
+Also, a search engine can make a public repository discoverable to anyone searching for it or somehting similar - but for a private repository the search engine does not have any record of it.
 
-## Detail the steps involved in making your first commit to a GitHub repository. What are commits, and how do they help in tracking changes and managing different versions of your project?
+
+## Detail the steps involved in making your first commit to a GitHub repository. What are commits, and how do they help in tracking changes and managing different versions of your project? 
+In other to make my first commit on a GitHub Repository I had to take the following steps:
+(1) I Created a GitHub Repository:
+- Had to first create a GitHub Account and then Log in
+- I created a New Repository by clicking the "+" icon on the page and filled the details I want for the repo - the name(My1stRepo_PLP1), a short description and selected "private". I initialized the Repo by selecting ADD README File - while ignoring the other options. Then I clicked the "Create New Repository" button
+(2) Next step is for me to Clone the Repo locally to my system:
+- I copied the URL for the repo by clicking the "Code" button and selected 'copy url'.
+- On my computer:
+    * I started the Git Bash terminal and typed "git clone http://github.com.....", pressed enter
+    * At the prompt - cd My1st.... - to navigate to the local folder
+    * I then created a new file using the touch filename command
+    * Staged the new file in prep for commit with  **git add .**
+    * then did the commit - git commit -m "This is for ...."
+    * Pushed the changes online: git push origin main
+    * Lasly i confirmed online
+  In my opion commits are like detailed snapshots of your project (a file or folder), it keeps a record of what was changed, by who and when. It allows you to be able to go back in time as it is to when the changes was made. In essence, each commit creates a "different" version of your work.
 
 ## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
 
